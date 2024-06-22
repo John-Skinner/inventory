@@ -5,4 +5,4 @@
 | 2 | connector | edge connector |  1 | 3.45
 
 [diagram](inventoryDiagram.svg)
-[html](https://github.com/John-Skinner/inventory/readme1.html)
+[html](https://github.com/John-Skinner/main/inventory/readme1.html)
