@@ -52,19 +52,19 @@ This is a simple sql structure for an inventory database.
 
 ## customerOrders
 
-|  id |  productId |  customerId |  orderId |
-|----:|-----------:|------------:|---------:|
-|   1 |          1 |           1 |        1 |
-|   2 |          1 |           2 |        1 |
-|   3 |          2 |           1 |        2 |
+|  id |  customerId |  orderId |
+|----:|------------:|---------:|
+|   1 |           1 |        1 |
+|   2 |           2 |        1 |
+|   3 |           1 |        2 |
 
 
 ## Orders
 
-| id | dueDate    | Status | shipmentDate |
-|---:|:-----------|--------|--------------|
-|  1 | 8/15/2024  |        |              |  
-|  2 | 10/25/2024 |        |              |
+| id |  customerId | dueDate    | Status     | shipmentDate  |
+|---:|------------:|:-----------|:-----------|:--------------|
+|  1 |           1 | 8/15/2024  | pending    |               |  
+|  2 |           2 | 10/25/2024 | completed  | 5/15/2024     |
 
 ## Sample Queries
 What parts are needed to build the products in order 1?
