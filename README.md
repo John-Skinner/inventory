@@ -5,3 +5,4 @@
 | 2 | connector | edge connector |  1 | 3.45
 
 [diagram](inventoryDiagram.svg)
+[html}(readme1.html)
