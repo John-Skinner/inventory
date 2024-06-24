@@ -1,5 +1,7 @@
 # Inventory Database Model
 This is a simple sql structure for an inventory database.
+The project goal is to implement a basic inventory database with PostgreSQL and the store, and 
+Vue as the front-end for basic data entry and queries.
 
 ![diagram](inventoryDiagram.png)
 
@@ -73,6 +75,14 @@ What should we order to have enough in stock to build X product items of type/id
 
 What is the customer cost for order X?
 
+# Code
+## initDb.js
+The initDB.js initializes the `InventoryDB` database to an empty database with no tables defined.
+## pgLoadDb.js
+pgLoadDb.js creates the table definitions and performs a population with the sample data shown 
+in this README file.
+## pgQuery
+This file runs a 'select' statement: SELECT id,name,price FROM Parts WHERE price < 20.
 
 
 
