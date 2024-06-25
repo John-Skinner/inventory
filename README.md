@@ -83,7 +83,17 @@ pgLoadDb.js creates the table definitions and performs a population with the sam
 in this README file.
 ## pgQuery
 This file runs a 'select' statement: SELECT id,name,price FROM Parts WHERE price < 20.
-
-
+## Using PSQL 
+You can use the psql command-line tool inside of the docker container
+```angular2html
+docker exec -it server-db-1 psql -U postgres -W InventoryDB
+```
+where
+1) `-it` indicates an interactive session
+2) `server-db-1` is the name of the container instance
+3) `psql` is the command to run, so always is "psql"
+4) `-U postgres` is the user id to use
+5) `-W` means to prompt for the password.  Look at the `docker-compose.yml` file for the actual password.
+6) `InventoryDB` indicates the database that psql will use.
 
 
