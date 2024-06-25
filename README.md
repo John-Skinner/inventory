@@ -96,4 +96,13 @@ where
 5) `-W` means to prompt for the password.  Look at the `docker-compose.yml` file for the actual password.
 6) `InventoryDB` indicates the database that psql will use.
 
+### Example queries
+List all tables in the database.
+````angular2html
+select * from information_schema.tables;
+````
+List the parts information for each product.
+```angular2html
+select * from Parts, ProductParts where Parts.id = ProductParts.partId;
+```
 
